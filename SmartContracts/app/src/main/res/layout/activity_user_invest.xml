@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_marginBottom="2dp"
     android:orientation="vertical">
 
@@ -59,48 +59,82 @@
                 android:textAlignment="center"
                 android:textSize="14sp" />
 
+
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#D2D5CE" />
+
+
         </LinearLayout>
 
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/r4"
+        android:id="@+id/r2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:orientation="horizontal"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:paddingTop="16dp">
 
-
         <LinearLayout
-            android:id="@+id/linear_layout3"
+            android:id="@+id/linear_layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_users"
+                android:id="@+id/share_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:maxLines="2"
-                android:text="Users List"
+                android:text="Share"
                 android:textAlignment="viewStart"
                 android:textSize="20sp" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/user_recycler_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Amount"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/area"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter Amount (in rupees)" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D2D5CE" />
+
 
         </LinearLayout>
 
+
+
     </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="CONFIRM"/>
 
 </LinearLayout>

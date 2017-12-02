@@ -69,6 +69,59 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/r3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/token_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:maxLines="2"
+                android:text="Available Tokens"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/user_token"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="900"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D2D5CE" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/r4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,18 +138,18 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_users"
+                android:id="@+id/tv_farmers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:maxLines="2"
-                android:text="Users List"
+                android:text="Farmers List"
                 android:textAlignment="viewStart"
                 android:textSize="20sp" />
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/user_recycler_view"
-                android:layout_width="wrap_content"
+                android:id="@+id/farmer_recycler_view"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
         </LinearLayout>
