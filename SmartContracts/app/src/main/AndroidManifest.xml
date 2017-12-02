@@ -9,16 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".FarmerSignupActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".FarmerProfile" />
-        <activity android:name=".UserSignupAcitivity"/>
+        <activity android:name=".UserSignupAcitivity" />
+        <activity android:name=".UserInvest" />
+        <activity android:name=".User_PurchaseActivity" />
+        <activity android:name=".User_PurchaseActivity2"></activity>
     </application>
 
 </manifest>
