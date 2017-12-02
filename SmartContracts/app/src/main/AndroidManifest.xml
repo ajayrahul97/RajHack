@@ -18,11 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FarmerProfile" />
+        <activity android:name=".FarmerLandDetails" />
         <activity android:name=".UserSignupAcitivity" />
         <activity android:name=".UserInvest" />
         <activity android:name=".User_PurchaseActivity" />
-        <activity android:name=".User_PurchaseActivity2"></activity>
+        <activity android:name=".User_PurchaseActivity2" />
+        <activity android:name=".FarmerProfile" />
+        <activity android:name=".UserMainScreen" />
+        <activity android:name=".FarmerMainScreen"></activity>
     </application>
 
 </manifest>

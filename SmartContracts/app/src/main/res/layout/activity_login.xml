@@ -70,6 +70,31 @@
 
 
         </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer"
+                android:id="@+id/farmer_check"
+                android:textColor="@color/White"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:text="User"
+                android:id="@+id/user_check"
+                android:textColor="@color/White"
+                />
+
+
+        </FrameLayout>
+
     </LinearLayout>
 
     <Button

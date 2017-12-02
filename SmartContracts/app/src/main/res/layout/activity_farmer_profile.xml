@@ -59,135 +59,11 @@
                 android:textAlignment="center"
                 android:textSize="14sp" />
 
-
             <View
                 android:id="@+id/divider"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#D2D5CE" />
-
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/r2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
-
-        <LinearLayout
-            android:id="@+id/linear_layout1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/land_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:maxLines="2"
-                android:text="Land Details"
-                android:textAlignment="viewStart"
-                android:textSize="20sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <TextView
-                    android:id="@+id/tv_area"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Area"
-                    android:textSize="18sp" />
-
-                <EditText
-                    android:id="@+id/area"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="Enter Area" />
-
-                <Spinner
-                    android:id="@+id/sp_units"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-
-                </Spinner>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:weightSum="3">
-
-                <TextView
-                    android:id="@+id/duration"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
-                    android:layout_weight="1"
-                    android:text="Duration"
-                    android:textSize="18sp" />
-
-                <Spinner
-                    android:id="@+id/sp_time"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2" />
-
-            </LinearLayout>
-
-            <View
-                android:id="@+id/divider2"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#D2D5CE" />
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/r3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
-
-        <LinearLayout
-            android:id="@+id/linear_layout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/crop_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:maxLines="2"
-                android:text="Crop Details"
-                android:textAlignment="viewStart"
-                android:textSize="20sp" />
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/crop_recycler_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
     </RelativeLayout>
@@ -201,28 +77,30 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp">
 
+
         <LinearLayout
             android:id="@+id/linear_layout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/sp_type_crop"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"></Spinner>
-
-            <Spinner
-                android:id="@+id/sp_crop_units"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"></Spinner>
-
-            <Button
-                android:id="@+id/btn_add_crop"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tv_users"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="CONFIRM" />
+                android:layout_marginBottom="10dp"
+                android:maxLines="2"
+                android:text="Users List"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/farmer_recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
         </LinearLayout>
 
     </RelativeLayout>
+
 </LinearLayout>
