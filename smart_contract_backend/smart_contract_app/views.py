@@ -22,13 +22,13 @@ class AppUserDetail(mixins.RetrieveModelMixin,
     queryset = AppUser.objects.all()
     serializer_class = AppUserSerializer
 
-    def get(self, request, *args, **kwargs)
+    def get(self, request, *args, **kwargs):
         return self.retrieve(request, *args, **kwargs)
 
-    def put(self, request, *args, **kwargs)
+    def put(self, request, *args, **kwargs):
         return self.update(request, *args, **kwargs)
 
-    def delete(self, request, *args, **kwargs)
+    def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
 
 class CropList(mixins.ListModelMixin, 
