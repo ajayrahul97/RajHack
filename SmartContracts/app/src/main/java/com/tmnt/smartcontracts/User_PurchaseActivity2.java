@@ -48,6 +48,6 @@ public class User_PurchaseActivity2 extends AppCompatActivity {
         localCropList.setAdapter(cropsOrderListAdapter);
         cropsOrderListAdapter.notifyDataSetChanged();
 
-        
+
     }
 }
