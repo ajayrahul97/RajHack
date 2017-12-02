@@ -7,6 +7,12 @@ package com.tmnt.smartcontracts.models;
 public class CropModel {
 
     String name;
+
+    public CropModel(String name, String units) {
+        this.name = name;
+        this.units = units;
+    }
+
     String units;
 
     public String getName() {

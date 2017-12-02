@@ -78,7 +78,6 @@ public class CropsListAdapter extends RecyclerView.Adapter<CropsListAdapter.View
 
         if (position < cropModelList.size()) {
             tempValues = cropModelList.get(position);
-
             holder.name.setText(tempValues.getName());
             holder.code.setText(tempValues.getUnits());
 

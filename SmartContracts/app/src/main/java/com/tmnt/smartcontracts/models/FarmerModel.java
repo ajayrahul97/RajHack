@@ -6,10 +6,15 @@ import java.util.List;
  * Created by ajayrahul on 2/12/17.
  */
 
-public class Farmer {
+public class FarmerModel {
 
     String name;
     List<String> crops;
+
+    public FarmerModel(String name, List<String> crops) {
+        this.name = name;
+        this.crops = crops;
+    }
 
     public String getName() {
         return name;
