@@ -1,5 +1,6 @@
 # RajHack
 *This repository contains the code for the Frontend and Backend of the EthCrop App.
+*It also contains all the assets related to design used for all the screens of the product.
 
 # EthCrop
 This appication is built mainly for Indian farmers,who face problems in getting the right price for their crops because of the intervention of middleman (mainly moneylenders and big storage agencies). They buy the crops at very low price from the farmers and sell it at a higher price to customers or endusers. Thus this creates a big problem for the farmers and thus not brings any security in transactions. There comes the use of modern technology Blockchain which contains the history of transactions between users and it also can not be altered. It even eliminates the third party intervention and thus produces the best of the results for both farmers and end users.
