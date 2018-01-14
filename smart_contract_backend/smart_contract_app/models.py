@@ -6,8 +6,10 @@ class AppUser(models.Model):
     email = models.EmailField()
     password = models.CharField(max_length=30)
     age = models.IntegerField()
-    id_proof = models.FileField(upload_to='id_proof/')
-    photo = models.FileField(upload_to='photos/')
+    id_proof = models.FileField(upload_to='id_proof/',
+               blank=True)
+    photo = models.FileField(upload_to='photos/',
+            blank=True)
     FARMER = 'f'
     CONSUMER = 'u'
     USER_TYPE = (
@@ -19,13 +21,13 @@ class AppUser(models.Model):
         choices = USER_TYPE,
         default = CONSUMER,
     )
-    shares = models.IntegerField()
+    shares = models.IntegerField(default=0)
  
     def __str__(self):
         return self.name 
    
 class Land(models.Model):
-    farmer_name = models.ForeignKey(AppUser) 
+    farmer = models.ForeignKey(AppUser, related_name='land') 
     location = models.CharField(max_length=30)
     size = models.IntegerField()
     SQUARE_METER = 'm2'
@@ -42,25 +44,28 @@ class Land(models.Model):
         default = SQUARE_METER,
     )
     duration = models.IntegerField()
-
+    def __str__(self):
+        return self.farmer.name+" "+str(self.size)+str(self.unit)
+ 
 class Crop(models.Model):
-    crop_land = models.ForeignKey(Land)
+    crop_land = models.ForeignKey(Land, related_name='crops')
     name = models.CharField(max_length=30)
     total_quantity = models.FloatField()
     quantity_remaining = models.FloatField()
+    def __str__(self):
+        return self.name  
     
 class SharePurchase(models.Model):
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(AppUser)
     value = models.IntegerField()
     transaction_id = models.CharField(max_length=32)
-
+    def __str__(self):
+        return self.user.name+" "+str(self.value)
+ 
 class CropPurchase(models.Model):
     crop = models.ForeignKey(Crop)
-    user = models.ForeignKey(User)
+    user = models.ForeignKey(AppUser)
     purchased_quantity = models.FloatField()
-    purchase_value = models.FloatField()
-
-
-    
-    
-
+    def __str__(self):
+        return self.user.name+" "+self.crop.name 
+ 

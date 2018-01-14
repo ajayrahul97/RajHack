@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from smart_contract_app import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^farmer/', views.AppUserList.as_view()),
+    url(r'^farmer/(?P<pk>[0-9]+)/$', views.FarmerDetail.as_view(), 
+    name='farmer-detail'),
+    url(r'^crop_purchase/',views.CropPurchaseList.as_view()),
+    url(r'^user_share/(?P<pk>[0-9]+)/$', views.UserShare.as_view(),
+    name='user_share_detail'),
+    url(r'^crops/', views.CropList.as_view()),
+    url(r'^share/', views.SharePurchaseList.as_view()),    
 ]
