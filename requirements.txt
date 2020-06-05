@@ -4,7 +4,7 @@ cffi==1.11.2
 chardet==3.0.4
 click==6.7
 cytoolz==0.8.2
-Django==1.11.7
+Django==1.11.29
 djangorestframework==3.7.3
 eth-abi==0.5.0
 eth-keyfile==0.4.0
