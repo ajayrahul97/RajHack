@@ -26,7 +26,7 @@ pyethash==0.1.27
 pylru==1.0.9
 pysha3==1.0.2
 pytz==2017.3
-PyYAML==3.12
+PyYAML==5.4
 repoze.lru==0.7
 requests==2.9.1
 rlp==0.6.0
